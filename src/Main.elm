@@ -2,7 +2,8 @@ module Main exposing (..)
 
 import Asteroids
 import Mario
-import Playground
+import Playground exposing (..)
+import TimeTravel exposing (addTimeTravel)
 import Turtle
 
 
@@ -22,4 +23,5 @@ gameApplication game =
 
 main =
     Asteroids.game
+        |> addTimeTravel
         |> gameApplication
